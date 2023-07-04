@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portail ODK</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+    <style>
+      body{
+        
+        border: 2px solid orangered;
+        border-radius: 20px;
+        position:absolute;
+        height: 90%;
+        left: 20%;
+        /* background-color: linear-gradient(45deg, orange, tomato); */
+        
+      }
+      
+      .slider{
+        border: 1px solid orangered;
+        border-radius: 8px;
+        width: 400px;
+        height: 200px;
+        overflow: hidden;
+        margin: 41px auto;
+        
+      }
+
+    .slides{
+      width: calc(500px * 3);
+      animation: glisse 10s infinite;
+    }
+    .slide{
+      float: left;
+    }
+
+    @keyframes glisse {
+      0% {
+        transform: translateX(0);
+      }
+      
+      20% {
+        transform: translateX(0);
+      }
+      
+      33% {
+        transform: translateX(-500px);
+      }
+
+      
+      43% {
+        transform: translateX(-500px);
+      }
+
+      66% {
+        transform: translateX(-1000px);
+      }
+
+      66% {
+        transform: translateX(-1000px);
+      }
+
+      100% {
+        transform: translateX(0);
+      }
+    }
+    .container {
+  margin: 20px auto;
+  max-width: 700px;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: black;
+   
+  
+}
+
+p {
+  color: black;
+  margin-bottom: 20px;
+}
+
+.button {
+  display: inline-block;
+  background-color: orangered;
+  color: #fff;
+  margin-top: 30px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: black;
+}
+   </style>
+</head>
+<body> 
+  
+      <div class="container">
+        <h1>Bienvenue sur le  Portail odk</h1>
+        <p>Le Portail ODK est une plateforme où vous pouvez consulter les informations des apprenants certifiés de ODK. </p>
+        <a href="Accueil.html" class="button">Ajouter un apprenant</a>
+        <a href="liste_apprenant.php" class="button">Accéder au Liste </a>
+    </div>
+    
+    
+    </div>
+
+    <div class="slider">
+      <div class="slides">
+        <div class="slide"><img src="images/fab1.png" alt=""></div>    
+        <div class="slide"><img src="images/fab2.png" alt=""></div>
+        <div class="slide"><img src="images/fab4.png" alt=""></div>
+      </div> 
+
+</body>
+</html>
+</body>
+</html>

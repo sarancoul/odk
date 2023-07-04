@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Accueil</title>
+    <style>
+    
+    
+    
+    body {
+   font-family: Arial, sans-serif;
+   margin: 20px auto;
+   max-width: 600px;
+   padding: 20px 0px;
+   border: 2px solid #000;
+   border-radius: 8px;   
+ }
+ 
+ h1 {
+   color: #000;
+   text-align: center;
+  font-size: 24px;
+  margin-bottom: 48px;
+ }
+ 
+ form {
+   margin-top: 20px;
+ }
+
+ 
+ 
+ label {
+   display: block;
+   margin-bottom: 5px;
+   color: #000;
+   text-align: left;
+    width: 90%;
+ }
+ 
+ input[type="text"],
+ input[type="email"],
+ input[type="tel"],
+ input[type="number"],
+ input[type="date"] {
+   width: 90%;
+   padding: 5px;
+   margin-bottom: 10px;
+  
+   border-radius: 8px;
+   height: 27px;
+
+   
+   
+ }
+ 
+ button,.btn {
+   background-color: #FFF;
+   color: #000;
+   padding: 10px 0px;
+   border: none;
+   border-radius: 53px;
+   cursor: pointer;
+   width: 146px;
+ }
+ 
+ 
+ .error-message {
+   color: red;
+   margin-top: 5px;
+ }
+ .contenu{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(45deg, orange, tomato);
+    border-radius: 50px 50px 0px 0px;
+    padding: 20px 0px;
+ }
+ form{
+  text-align: center;
+ }
+ .img-logo{
+  width: 140px;
+  margin-bottom: 15px;
+ }
+ .buto{
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  
+  width: 40px;
+  text-decoration: none;
+  border-radius:  50px;
+  cursor: pointer;
+ }
+
+ 
+ </style>
+ </head>
+ <body>
+  <a href="index.html" class="buto">sortie</a>
+     <h1>FORMULAIRE INSCRIPTION</h1>
+ 
+     <form id="apprenant-form" method="POST" enctype="multipart/form-data" action="ajouter_apprenant.php">
+      <img class="img-logo" src="images/logo.png" alt="">
+         <div class="container contenu">
+          
+         <!-- <label for="matricule" > Matricule</label>
+         <input type="text" id="matricule" name="matricule" value="P1XXXX"   required >        -->
+         <label for="nom">Nom</label>
+         <input type="text" id="nom" name="nom" value="" required>
+          
+
+         <label for="prenom">Prenom</label>
+         <input type="text" id="prenom" name="prenom" value="" required>
+     
+         <label for="age">Âge</label>
+         <input type="number" id="age" name="age"  value="" required>
+     
+         <label for="date_naissance">Date de naissance</label>
+         <input type="date" id="date_naissance" name="date_naissance" value="" required>
+     
+         <label for="email">Adresse e-mail</label>
+         <input type="email" id="email" name="email" value="" required>
+ 
+         <label for="telephone">Numéro de téléphone</label>
+         <input type="tel" id="telephone" name="telephone" value="" required>
+         
+         <label for="photo">Photo</label>
+         <input class="" type="file" id="photo" name="photo">
+         
+         <label for="promotion">Promotion</label>
+         <input type="text" id="promotion" name="promotion" value="" required>
+         
+         <label for="annee_certification">Année de certification:</label>
+         <input type="text" id="annee_certification" name="annee_certification" value="" required>
+ 
+         <button type="submit">Enregistrer</button>
+         
+        </div>
+        
+     </form>
+ 
+     <script src="script.js"></script>
+ 
